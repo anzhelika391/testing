@@ -1,0 +1,160 @@
+/* Загальні стилі */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  animation: fadeIn 1s ease-in;
+  margin: 0;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+h1 {
+  font-size: 2rem; /* Зменшено розмір заголовка */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  margin-bottom: 15px;
+}
+
+.question-block {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 15px;
+  border-radius: 10px;
+  margin: 15px auto;
+  width: 60%; /* Зменшено ширину */
+  box-shadow: 2px 5px rgba(0, 0, 0, 0.3); /* Легке тінювання */
+  transition: transform 0.3s ease-in-out;
+}
+
+.question-block:hover {
+  transform: scale(1.05);
+}
+
+/* Додано відступи зліва та справа для вибору варіантів */
+.question-container {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 15px; /* Відстань між кнопками */
+  margin-top: 20px;
+}
+
+.next-btn, .finish-btn {
+  background: #ff4081;
+  border: none;
+  padding: 12px 25px; /* Зменшено відступи */
+  font-size: 1rem; /* Зменшено розмір шрифта */
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out, transform 0.2s;
+  min-width: 140px;
+}
+
+.next-btn:hover, .finish-btn:hover {
+  background: #e60073;
+  transform: scale(1.1);
+}
+
+/* Результат */
+.result-box {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 12px;
+  margin-top: 15px;
+  border-radius: 10px;
+  box-shadow: 2px 5px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.5s ease-in-out forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Маленькі зображення */
+#svg-container img, .question-block img {
+  max-width: 50%; /* Зменшено максимальну ширину зображень */
+  height: auto;
+  margin: 10px 0; /* Відступи навколо зображення */
+  border-radius: 8px;
+  transition: transform 0.2s ease-in-out;
+}
+
+#svg-container img:hover, .question-block img:hover {
+  transform: scale(1.05);
+}
+
+/* Навігація між цифрами 1 2 3 4 5 */
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Збільшено відстань між цифрами */
+  margin-top: 20px;
+}
+
+.pagination span {
+  font-size: 1.2rem;
+  padding: 8px 15px;
+  background-color: #ff4081;
+  color: white;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.pagination span:hover {
+  background-color: #e60073;
+  transform: scale(1.1);
+}
+
+/* Відступи між варіантами відповідей */
+.answer-options {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Збільшено відступи між варіантами */
+  margin-top: 15px;
+  margin-left: 30px;  /* Збільшені відступи зліва */
+  margin-right: 30px; /* Збільшені відступи справа */
+}
+
+.answer-options label {
+  font-size: 1.1rem;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.answer-options label:hover {
+  background-color: #ff4081;
+  transform: scale(1.05);
+}

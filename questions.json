@@ -1,0 +1,57 @@
+[
+    {
+        "question": "What is the shape in the picture?",
+        "options": [
+            "square",
+            "circle",
+            "rectangle",
+            "triangle"
+        ],
+        "correct": 0,
+        "svg": "square.svg"
+    },
+    {
+        "question": "What color is the shape?",
+        "options": [
+            "red",
+            "green",
+            "blue",
+            "lavender"
+        ],
+        "correct": 0,
+        "svg": "red.svg"
+    },
+    {
+        "question": "How many sides does a triangle have?",
+        "options": [
+            "3",
+            "4",
+            "5",
+            "6"
+        ],
+        "correct": 0,
+        "svg": "triangle.svg"
+    },
+    {
+        "question": "What is the shape in the picture?",
+        "options": [
+            "circle",
+            "ellipse",
+            "square",
+            "triangle"
+        ],
+        "correct": 1,
+        "svg": "ellipse.svg"
+    },
+    {
+        "question": "What is the name of this color?",
+        "options": [
+            "red",
+            "blue",
+            "green",
+            "yellow"
+        ],
+        "correct": 0,
+        "svg": "red.svg"
+    }
+]
